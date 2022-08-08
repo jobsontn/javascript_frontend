@@ -1,9 +1,30 @@
 extends layout
 
 block css
+  link(rel='stylesheet', href='/css/jquery.pagepiling.min.css')
+  link(rel='stylesheet', href='/fontawesome/css/all.min.css')
+  link(rel='stylesheet', href='/css/app.css')
 
 block body
   body
-    h1 Moura Tech
+    ul#menu
+      li(data-menuanchor="section1").active
+        a(href="#section1")
+          i.fas.fa-home
+      li(data-menuanchor="section2").active
+        a(href="#section2") Sobre
+      li(data-menuanchor="section3").active
+        a(href="#section3") Seção 3
+      li(data-menuanchor="section4").active
+        a(href="#section4") Seção 4
+    main#pagepiling
+      section#section1.section
+      section#section2.section
+      section#section3.section
+      section#section4.section
 
     block js
+      script(src='/js/jquery.min.js')
+      script(src='/fontawesome/js/all.min.js')
+      script(src='/js/jquery.pagepiling.min.js')
+      script(src='/js/index.js')

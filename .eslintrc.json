@@ -4,6 +4,7 @@
         "commonjs": true,
         "es2021": true,
         "node": true,
+        "jquery": true,
         "jest": true
     },
     "extends": [
@@ -12,7 +13,7 @@
     "parserOptions": {
         "ecmaVersion": "latest"
     },
-    "ignorePatterns": ["*.pug", "public/*"],
+    "ignorePatterns": ["*.pug", "*.scss", "public/*", "src/images/*"],
     "rules": {
       "arrow-body-style": "off",
       "no-console": "off"

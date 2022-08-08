@@ -13,12 +13,60 @@ $white: #ffffff;
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
 }
 
-body {
+#menu {
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+  li {
+    display:inline-block;
+    margin: 5px;
+    color: #000;
+    background: rgba(255,255,255, 0.5);
+    border-radius: 10px;
+    a {
+      text-decoration:none;
+	    color: #000;
+      padding: 9px 18px;
+	    display:block;
+    }
+    .active {
+      background:#666;
+      background: rgba(0,0,0, 0.5);
+      color: #fff;
+      a {
+        padding: 9px 18px;
+	      display:block;
+        color: #fff;
+      }
+    }
+    :hover {
+      background: rgba(255,255,255, 1.0);
+      border-radius: 10px;
+    }
+  }
+}
+
+#section1{
+  background-color: $blue1;
+  background-image: url(/img/site/wallpaper01.jpg);
+  background-size: cover;
+}
+#section2{
+  background-color: $blue2;
+  background-image: url(/img/site/wallpaper02.jpeg);
+  background-size: cover;
+}
+#section3{
+  background-color: $yellow1;
+  background-size: cover;
+}
+#section4{
   background-color: $gray;
-}
-
-h1 {
-  color: $blue1;
+  background-size: cover;
 }
