@@ -13,7 +13,7 @@
     "parserOptions": {
         "ecmaVersion": "latest"
     },
-    "ignorePatterns": ["*.pug", "*.scss", "public/*", "src/images/*"],
+    "ignorePatterns": ["*.pug", "*.scss", "public/*", "src/images/*", "src/videos/*"],
     "rules": {
       "arrow-body-style": "off",
       "no-console": "off"

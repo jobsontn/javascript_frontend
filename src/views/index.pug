@@ -11,17 +11,27 @@ block body
       li(data-menuanchor="section1").active
         a(href="#section1")
           i.fas.fa-home
-      li(data-menuanchor="section2").active
+      li(data-menuanchor="section2")
         a(href="#section2") Sobre
-      li(data-menuanchor="section3").active
-        a(href="#section3") Seção 3
-      li(data-menuanchor="section4").active
+      li(data-menuanchor="section3")
+        a(href="#section3") Inauguração
+      li(data-menuanchor="section4")
         a(href="#section4") Seção 4
+      li(data-menuanchor="section5")
+        a(href="#section5") Seção 5
     main#pagepiling
       section#section1.section
       section#section2.section
+        video(autoplay loop muted)#myVideo
+          source(src="/videos/Moura Tech.mp4" type="video/mp4")
       section#section3.section
+        iframe(src="https://www.youtube.com/embed/sUWO65BKVI8" title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen)
+        <h1>Aula Magna do Projeto Moura Tech</h1>
       section#section4.section
+      section#section5.section
 
     block js
       script(src='/js/jquery.min.js')

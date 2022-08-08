@@ -52,6 +52,22 @@ $white: #ffffff;
   }
 }
 
+#myVideo{
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  bottom: 0;
+  top:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black;
+  background-position: center center;
+  background-size: contain;
+    object-fit: cover;
+}
+
 #section1{
   background-color: $blue1;
   background-image: url(/img/site/wallpaper01.jpg);
@@ -63,10 +79,20 @@ $white: #ffffff;
   background-size: cover;
 }
 #section3{
-  background-color: $yellow1;
+  background-color: $blue2;
+  background-image: url(/img/site/wallpaper02.jpeg);
   background-size: cover;
+  iframe {
+    margin: 0 auto;
+  }
 }
 #section4{
   background-color: $gray;
+  background-image: url(/img/site/wallpaper03.jpeg);
+  background-size: cover;
+}
+#section5{
+  background-color: $gray;
+  background-image: url(/img/site/wallpaper04.jpeg);
   background-size: cover;
 }

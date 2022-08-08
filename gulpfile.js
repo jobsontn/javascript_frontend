@@ -60,11 +60,11 @@ function publish(cb) {
   gulp.src('./node_modules/bootstrap/dist/js/*.min.js*')
     .pipe(gulp.dest('./public/js'));
   // imagens
-  gulp.src('./src/images/**/*')
+  gulp.src('./src/images/**/**')
     .pipe(imagemin())
     .pipe(gulp.dest('./public/img'));
   // videos
-  gulp.src('./src/videos/**/*')
+  gulp.src('./src/videos/**/**')
     .pipe(gulp.dest('./public/videos'));
   cb();
 }
