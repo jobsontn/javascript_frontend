@@ -1,0 +1,42 @@
+{
+  "name": "javascript_frontend",
+  "version": "1.0.0",
+  "description": "Moura Tech - Frontend - JavaScript Intermediário",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "lint": "eslint --no-error-on-unmatched-pattern --fix src/** test/**",
+    "test": "jest --verbose=true",
+    "testing": "jest --watch --verbose=true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jobsontn/javascript_frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jobsontn/javascript_frontend/issues"
+  },
+  "homepage": "https://github.com/jobsontn/javascript_frontend#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "pagepiling.js": "^1.5.6",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "jest": "^28.1.3",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19",
+    "sass": "^1.54.3",
+    "supertest": "^6.2.4"
+  }
+}
